@@ -1,0 +1,22 @@
+@api= http://localhost:5431/reports
+
+GET {{api}}
+###
+GET {{api}}/1
+###
+GET {{api}}/count
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+   "parroquia" : "CALDERON" ,
+   "distrito" : "CALDERON",
+   "circuito" : "CALDERON",
+   "categoria" : "TENTATIVA DE ROBO",
+   "latitud" : "-0.086719",
+   "longitud" : "-78.477585"
+}
+###
+DELETE {{api}}/5
